@@ -1,3 +1,35 @@
-
+@media screen and (min-width: 350px) and (max-width: 480px) {
+  * {
+    margin: 0;
+    font-family: Roboto, sans-serif;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header img {
+    width: 197px;
+    height: 36px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+  header .location {
+    background-color: #EAEAEA;
+    color: #353535;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .location p, header .location i {
+    margin: 15px 10px;
+  }
+  header .location p {
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,39 @@
+$main-color : #9356DC;
+$secondary-color : #FF79DA;
+$third-color : #99E2D0;
+
+@media screen and (min-width: 350px) and (max-width: 480px) {
+    * {
+        margin: 0;
+        font-family: Roboto, sans-serif;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+            width: 197px;
+            height: 36px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        .location {
+            background-color: #EAEAEA;
+            color: #353535;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+                p, i {
+                    margin: 15px 10px;
+                }
+                p {
+                    font-weight: 600;
+                    font-size: 18px;
+                    letter-spacing: 0.5px;
+                }
+        }
+    }
+}
