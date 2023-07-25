@@ -1,35 +1,61 @@
-@media screen and (min-width: 350px) and (max-width: 480px) {
-  * {
-    margin: 0;
-    font-family: Roboto, sans-serif;
-  }
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  header img {
-    width: 197px;
-    height: 36px;
-    margin-top: 30px;
-    margin-bottom: 15px;
-  }
-  header .location {
-    background-color: #EAEAEA;
-    color: #353535;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  header .location p, header .location i {
-    margin: 15px 10px;
-  }
-  header .location p {
-    font-weight: 600;
-    font-size: 18px;
-    letter-spacing: 0.5px;
-  }
+* {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header img {
+  width: 197px;
+  height: 36px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+header .location {
+  background-color: #EAEAEA;
+  color: #353535;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .location p, header .location i {
+  margin: 15px 10px;
+}
+header .location p {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+.presentation {
+  background-color: #f6f6f6;
+  text-align: center;
+  padding: 40px 25px;
+}
+.presentation h1 {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px 50px;
+}
+.presentation p {
+  font-size: 22px;
+  font-weight: 300;
+  padding: 10px 0;
+}
+.presentation button {
+  padding: 20px 25px;
+  border-radius: 30px;
+  font-size: 18px;
+  color: white;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-style: none;
+  letter-spacing: 1px;
+  margin: 30px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
 }
 
 /*# sourceMappingURL=style.css.map */
