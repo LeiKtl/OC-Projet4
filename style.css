@@ -4,7 +4,7 @@
 }
 
 h1, h2 {
-  font-size: 30px;
+  font-size: 28px;
 }
 
 header {
@@ -14,8 +14,8 @@ header {
 }
 header img {
   width: 197px;
-  height: 36px;
-  margin-top: 30px;
+  height: 34px;
+  margin-top: 20px;
   margin-bottom: 15px;
 }
 header .location {
@@ -31,50 +31,48 @@ header .location p, header .location i {
 }
 header .location p {
   font-weight: 600;
-  font-size: 18px;
   letter-spacing: 0.5px;
 }
 
 .presentation {
   background-color: #f6f6f6;
   text-align: center;
-  padding: 40px 25px;
+  padding: 30px 25px;
 }
 .presentation h1 {
   font-weight: bold;
-  padding: 10px 50px;
+  padding: 5px 50px;
 }
 .presentation p {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 300;
-  padding: 10px 0;
+  padding: 5px 0;
 }
 .presentation button {
-  padding: 20px 25px;
+  padding: 15px 25px;
   border-radius: 30px;
   font-size: 18px;
   color: white;
   background: linear-gradient(#FF79DA, #9356DC);
   border-style: none;
-  letter-spacing: 1px;
   margin: 30px;
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 5px 15px 0px rgba(172, 171, 171, 0.5607843137);
 }
 
 .functioning, .restaurants {
-  padding: 60px 20px;
+  padding: 50px 20px;
 }
 
 .functioning__card {
-  margin: 25px 15px;
+  margin: 30px 15px;
   font-size: 18px;
   font-weight: 700;
   display: flex;
   align-items: center;
   background-color: #f6f6f6;
   border-radius: 20px;
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
-  height: 72px;
+  box-shadow: 0px 5px 15px 0px rgba(172, 171, 171, 0.5607843137);
+  height: 80px;
 }
 .functioning__card--number {
   position: relative;
@@ -85,6 +83,9 @@ header .location p {
   font-weight: 300;
   padding: 4px 8px;
   border-radius: 15px;
+}
+.functioning__card .color__icone {
+  color: #9356DC;
 }
 .functioning__card i {
   color: #353535;
@@ -137,6 +138,32 @@ header .location p {
   position: absolute;
   bottom: 35px;
   right: 30px;
+}
+
+.footer {
+  background-color: #353535;
+  padding: 30px;
+}
+.footer__logo {
+  color: white;
+  font-size: 20px;
+  font-weight: lighter;
+  font-family: "Shrikhand";
+  margin-bottom: 10px;
+}
+.footer__link {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+.footer__link i {
+  margin-right: 10px;
+}
+.footer__link--bolder {
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=style.css.map */
