@@ -16,7 +16,7 @@ $background : #f6f6f6;
 }
 
 @mixin shadow {
-    box-shadow: 0px 5px 15px 0px #acabab8f;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
 
 * {
@@ -47,6 +47,7 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
+
             p, i {
                 margin: 15px 10px;
             }
@@ -85,6 +86,7 @@ header {
 }
 
 .functioning {
+
     &__card {
         margin: 30px 15px;
         font-size: 18px;
@@ -124,6 +126,12 @@ header {
 
 .restaurants {
     background-color: $background;
+
+    &__cards a{
+        text-decoration: none;
+        color: black;
+    }
+
     &__card {
         background-color: white;
         border-radius: 20px;
