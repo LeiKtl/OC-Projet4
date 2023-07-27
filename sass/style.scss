@@ -226,7 +226,7 @@ header {
 
 .footer {
     background-color: $dark-grey;
-    padding: 30px;
+    padding: 20px;
 
     &__logo {
         color: white;
@@ -278,6 +278,7 @@ header {
     @media screen and (min-device-width : 1024px){
         &__logo {
             margin-left: 120px;
+            margin-right: 50px;
         }
     }
 }
