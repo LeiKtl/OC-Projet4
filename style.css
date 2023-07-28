@@ -63,6 +63,11 @@ header .location p {
   border-style: none;
   margin: 30px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  transition: all 0.5s ease;
+}
+.presentation button:hover {
+  box-shadow: 0px 4px 15px 5px rgba(0, 0, 0, 0.247);
+  opacity: 0.8;
 }
 
 .functioning, .restaurants {
@@ -172,10 +177,32 @@ header .location p {
   font-size: 17px;
   font-weight: 300;
 }
-.restaurants__card--heart {
+.restaurants__card--heart i {
   position: absolute;
   bottom: 35px;
   right: 30px;
+  font-size: 22px;
+}
+.restaurants__card .empty__heart {
+  opacity: 1;
+  transition: all 200ms ease-in-out;
+}
+.restaurants__card .empty__heart:hover {
+  opacity: 0;
+  z-index: -1;
+}
+.restaurants__card .full__heart {
+  color: transparent;
+  background: linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: all 200ms ease-in-out;
+  opacity: 0;
+}
+.restaurants__card .full__heart:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  z-index: 1;
 }
 @media screen and (min-device-width: 768px) {
   .restaurants__card {

@@ -19,6 +19,10 @@ $background : #f6f6f6;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
 
+@mixin shadow-hover {
+    box-shadow: 0px 4px 15px 5px rgba(0, 0, 0, 0.247);
+}
+
 * {
     margin: 0;
     font-family: Roboto, sans-serif;
@@ -83,6 +87,12 @@ header {
     button {
         @include cta-button;
         @include shadow;
+        transition: all 0.5s ease;
+
+        &:hover {
+            @include shadow-hover;
+            opacity: 0.8;
+        }
     }
 }
 
@@ -207,10 +217,36 @@ header {
             }
         }
 
-        &--heart {
+        &--heart i{
             position: absolute;
             bottom: 35px;
             right: 30px;
+            font-size: 22px;
+        }
+
+        .empty__heart{
+            opacity: 1;
+            transition: all 200ms ease-in-out;
+        }
+
+        .empty__heart:hover {
+            opacity: 0;
+            z-index: -1;
+        }
+
+        .full__heart {
+            color: transparent;
+            background: linear-gradient($secondary-color, $main-color);
+            background-clip: text;
+            -webkit-background-clip: text;
+            transition: all 200ms ease-in-out;
+            opacity: 0;
+        }
+        
+        .full__heart:hover {
+            opacity: 1;
+            transform: scale(1.1);
+            z-index: 1;
         }
 
         @media screen and (min-device-width : 768px) {
