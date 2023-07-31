@@ -1,0 +1,54 @@
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .header {
+        @include shadow;
+        height: 63px;
+        width: 100%;
+        z-index: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    /*** header home page ***/
+    
+    img {
+        width: 197px;
+        height: 34px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    .location {
+        background-color: #EAEAEA;
+        color: $dark-grey;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+            p, .fa-location-dot {
+                margin: 15px 10px;
+            }
+
+            p {
+                font-weight: 600;
+                letter-spacing: 0.5px;
+            }
+    }
+
+    /*** header menu restaurant page ***/
+
+    a {
+        color: black;
+    }
+
+    .fa-arrow-left {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    font-size: 22px;
+    }
+}

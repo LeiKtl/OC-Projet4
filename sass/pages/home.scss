@@ -1,0 +1,202 @@
+.presentation {
+    background-color: $background;
+    text-align: center;
+    padding: 30px 25px;
+
+    h1 {
+        font-weight: bold;
+        padding: 5px 50px;
+
+        @media screen and (min-device-width : 768px) {
+            margin-bottom: 20px;
+            font-size: 40px;
+        }
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: 300;
+        padding: 5px 0;
+    }
+
+    button {
+        margin-top: 30px;
+        @include cta-button;
+        @include shadow;
+        transition: all 0.5s ease;
+
+        &:hover {
+            @include shadow-hover;
+            opacity: 0.8;
+        }
+    }
+}
+
+.functioning, .restaurants {
+    padding: 50px 20px;
+
+    @media screen and (min-device-width : 768px){
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+
+    @media screen and (min-device-width : 1024px){
+        padding-left: 180px;
+        padding-right: 180px;
+    }
+}
+
+.functioning {
+
+    &__cards {
+
+        @media screen and (min-device-width : 768px) {
+            display: flex;
+        }
+    }
+
+    &__card {
+        margin: 20px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        background-color: $background;
+        border-radius: 20px;
+        @include shadow;
+        height: 72px;
+
+        &--number{
+            position: relative;
+            left: -15px;
+            background-color: $main-color;
+            color: white;
+            font-size: 12px;
+            font-weight: 300;
+            padding: 4px 8px;
+            border-radius: 15px;
+        }
+
+        .color__icone {
+            color: $main-color;
+        }
+        
+        i {
+            color: #353535;
+            margin: 0 15px;
+        }
+
+        p {
+            margin: 10px;
+        }
+        
+        @media screen and (min-device-width : 768px) {
+            width: 30%;
+        }
+    }
+
+    @media screen and (min-device-width : 768px){
+        padding-top: 40px;
+        padding-bottom: 25px;
+    }
+}
+
+.restaurants {
+    background-color: $background;
+
+    &__cards {
+
+    @media screen and (min-device-width : 768px){
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    }
+
+    &__card {
+        background-color: white;
+        border-radius: 20px;
+        width: 100%;
+        height: 255px;
+        position: relative;
+        margin: 20px 0;
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        img {
+            height: 180px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 20px 20px 0 0;
+        }
+
+        &--new {
+            background-color: $third-color;
+            color: #008766;
+            font-weight: 500;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            padding: 6px 15px;
+            border-radius: 3px;
+        }
+
+        &--content {
+            margin: 10px 15px;
+
+            h3 {
+                font-size: 18px;
+                font-weight: 700;
+                margin: 5px 0;
+            }
+
+            p{ 
+                font-size: 17px;
+                font-weight: 300;
+            }
+        }
+
+        &--heart i{
+            position: absolute;
+            bottom: 35px;
+            right: 30px;
+            font-size: 25px;
+        }
+
+        .empty__heart{
+            opacity: 1;
+            transition: all 200ms ease-in-out;
+        }
+
+        .empty__heart:hover {
+            opacity: 0;
+            z-index: -1;
+        }
+
+        .full__heart {
+            color: transparent;
+            background: linear-gradient($secondary-color, $main-color);
+            background-clip: text;
+            -webkit-background-clip: text;
+            transition: all 200ms ease-in-out;
+            opacity: 0;
+        }
+        
+        .full__heart:hover {
+            opacity: 1;
+            transform: scale(1.1);
+            z-index: 1;
+        }
+
+        @media screen and (min-device-width : 768px) {
+            width: 45%;
+        }
+    }
+
+    @media screen and (min-device-width : 768px){
+        padding-top: 35px;
+        padding-bottom: 5px;
+    }
+}

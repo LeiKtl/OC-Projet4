@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   font-family: Roboto, sans-serif;
@@ -11,6 +12,16 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /*** header home page ***/
+  /*** header menu restaurant page ***/
+}
+header .header {
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  height: 63px;
+  width: 100%;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
 }
 header img {
   width: 197px;
@@ -26,12 +37,21 @@ header .location {
   justify-content: center;
   align-items: center;
 }
-header .location p, header .location i {
+header .location p, header .location .fa-location-dot {
   margin: 15px 10px;
 }
 header .location p {
   font-weight: 600;
   letter-spacing: 0.5px;
+}
+header a {
+  color: black;
+}
+header .fa-arrow-left {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  font-size: 22px;
 }
 
 .presentation {
@@ -55,13 +75,13 @@ header .location p {
   padding: 5px 0;
 }
 .presentation button {
+  margin-top: 30px;
   padding: 15px 25px;
   border-radius: 30px;
-  font-size: 18px;
+  font-size: 16px;
   color: white;
   background: linear-gradient(#FF79DA, #9356DC);
   border-style: none;
-  margin: 30px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   transition: all 0.5s ease;
 }
@@ -72,6 +92,12 @@ header .location p {
 
 .functioning, .restaurants {
   padding: 50px 20px;
+}
+@media screen and (min-device-width: 768px) {
+  .functioning, .restaurants {
+    padding-left: 90px;
+    padding-right: 90px;
+  }
 }
 @media screen and (min-device-width: 1024px) {
   .functioning, .restaurants {
@@ -214,6 +240,151 @@ header .location p {
     padding-top: 35px;
     padding-bottom: 5px;
   }
+}
+
+main {
+  margin-bottom: -60px;
+}
+
+.restaurant__image {
+  width: 100%;
+  height: 275px;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.container {
+  background-color: #f6f6f6;
+  border-radius: 40px 40px 0 0;
+  position: relative;
+  top: -60px;
+  padding-bottom: 40px;
+}
+@media screen and (min-device-width: 768px) {
+  .container {
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+}
+@media screen and (min-device-width: 1024px) {
+  .container {
+    padding-left: 180px;
+    padding-right: 180px;
+    margin-left: 180px;
+    margin-right: 180px;
+  }
+}
+
+.menu__title {
+  padding: 35px 20px;
+}
+.menu__title h1 {
+  font-family: "Shrikhand", Sans-sérif;
+  font-size: 28px;
+  margin-right: 60px;
+  position: relative;
+}
+.menu__title--heart i {
+  font-size: 24px;
+  position: absolute;
+  right: 40px;
+  top: 42px;
+}
+@media screen and (min-device-width: 768px) {
+  .menu__title--heart i {
+    right: 180px;
+  }
+}
+@media screen and (min-device-width: 1024px) {
+  .menu__title--heart i {
+    right: 230px;
+  }
+}
+.menu__title .empty__heart {
+  opacity: 1;
+  transition: all 200ms ease-in-out;
+}
+.menu__title .empty__heart:hover {
+  opacity: 0;
+  z-index: -1;
+}
+.menu__title .full__heart {
+  color: transparent;
+  background: linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: all 200ms ease-in-out;
+  opacity: 0;
+}
+.menu__title .full__heart:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  z-index: 1;
+}
+@media screen and (min-device-width: 768px) {
+  .menu__title {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.menu__dishes {
+  margin: 0 15px 40px 15px;
+}
+.menu__dishes h2 {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 16px;
+  border-bottom: solid #99E2D0 3px;
+  width: 40px;
+}
+
+.dishes__card {
+  background-color: white;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  margin-top: 12px;
+}
+.dishes__card h3 {
+  font-weight: 500;
+  font-size: 18px;
+}
+.dishes__card--content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 15px;
+}
+.dishes__card--content p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.dishes__card--content span {
+  font-weight: 700;
+  text-overflow: ellipsis;
+}
+
+.button__center {
+  display: flex;
+  justify-content: center;
+}
+.button__center button {
+  padding: 15px 25px;
+  border-radius: 30px;
+  font-size: 16px;
+  color: white;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-style: none;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  transition: all 0.5s ease;
+}
+.button__center button:hover {
+  box-shadow: 0px 4px 15px 5px rgba(0, 0, 0, 0.247);
+  opacity: 0.8;
 }
 
 .footer {

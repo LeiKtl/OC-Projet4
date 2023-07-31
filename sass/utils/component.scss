@@ -1,0 +1,23 @@
+$main-color : #9356DC;
+$secondary-color : #FF79DA;
+$third-color : #99E2D0;
+$dark-grey: #353535;
+$background : #f6f6f6;
+
+
+@mixin cta-button {
+    padding: 15px 25px;
+    border-radius: 30px;
+    font-size: 16px;
+    color: white;
+    background: linear-gradient($secondary-color, $main-color);
+    border-style: none;
+}
+
+@mixin shadow {
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+
+@mixin shadow-hover {
+    box-shadow: 0px 4px 15px 5px rgba(0, 0, 0, 0.247);
+}

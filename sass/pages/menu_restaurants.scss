@@ -1,0 +1,147 @@
+main {
+    margin-bottom: -60px;
+}
+
+.restaurant__image {
+    width: 100%;
+    height: 275px;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.container {
+    background-color: $background;
+    border-radius: 40px 40px 0 0;
+    position: relative;
+    top: -60px;
+    padding-bottom: 40px;
+
+    @media screen and (min-device-width : 768px){
+        padding-left: 70px;
+        padding-right: 70px;
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+
+    @media screen and (min-device-width : 1024px){
+        padding-left: 180px;
+        padding-right: 180px;
+        margin-left: 180px;
+        margin-right: 180px;
+    }
+}
+
+.menu__title {
+    padding: 35px 20px;
+    
+
+    h1 {
+        font-family: 'Shrikhand', Sans-sérif;
+        font-size: 28px;
+        margin-right: 60px;
+        position: relative;
+    }
+
+    &--heart i{
+        font-size: 24px;
+        position: absolute;
+        right: 40px;
+        top: 42px;
+
+        @media screen and (min-device-width : 768px){
+            right: 180px;
+        }
+
+        @media screen and (min-device-width : 1024px){
+            right: 230px;
+        }
+    }
+    .empty__heart{
+        opacity: 1;
+        transition: all 200ms ease-in-out;
+    }
+
+    .empty__heart:hover {
+        opacity: 0;
+        z-index: -1;
+    }
+
+    .full__heart {
+        color: transparent;
+        background: linear-gradient($secondary-color, $main-color);
+        background-clip: text;
+        -webkit-background-clip: text;
+        transition: all 200ms ease-in-out;
+        opacity: 0;
+    }
+    
+    .full__heart:hover {
+        opacity: 1;
+        transform: scale(1.1);
+        z-index: 1;
+    }
+
+    @media screen and (min-device-width : 768px){
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.menu__dishes {
+    margin: 0 15px 40px 15px;
+
+    h2 {
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 16px;
+        border-bottom: solid $third-color 3px;
+        width: 40px;
+    }
+}
+
+.dishes__card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 20px;
+    @include shadow;
+    margin-top: 12px;
+
+    h3{
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    &--content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 15px;
+
+        p {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        span {
+            font-weight: 700;
+            text-overflow: ellipsis;
+        }
+    }
+}
+
+.button__center {
+    display: flex;
+    justify-content: center;
+   
+    button {
+    @include cta-button;
+    @include shadow;
+    transition: all 0.5s ease;
+
+        &:hover {
+            @include shadow-hover;
+            opacity: 0.8;
+        }
+    }
+}
