@@ -145,6 +145,9 @@
 
         &--content {
             margin: 10px 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
 
             h3 {
                 font-size: 18px;
@@ -156,38 +159,6 @@
                 font-size: 17px;
                 font-weight: 300;
             }
-        }
-
-        &--heart i{
-            position: absolute;
-            bottom: 35px;
-            right: 30px;
-            font-size: 25px;
-        }
-
-        .empty__heart{
-            opacity: 1;
-            transition: all 200ms ease-in-out;
-        }
-
-        .empty__heart:hover {
-            opacity: 0;
-            z-index: -1;
-        }
-
-        .full__heart {
-            color: transparent;
-            background: linear-gradient($secondary-color, $main-color);
-            background-clip: text;
-            -webkit-background-clip: text;
-            transition: all 200ms ease-in-out;
-            opacity: 0;
-        }
-        
-        .full__heart:hover {
-            opacity: 1;
-            transform: scale(1.1);
-            z-index: 1;
         }
 
         @media screen and (min-device-width : 768px) {

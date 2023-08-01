@@ -54,6 +54,26 @@ header .fa-arrow-left {
   font-size: 22px;
 }
 
+.full__heart, .empty__heart {
+  font-size: 24px;
+}
+
+.full__heart {
+  position: relative;
+  right: 28px;
+  color: transparent;
+  background: linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 200ms ease;
+}
+
+.full__heart:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
 .presentation {
   background-color: #f6f6f6;
   text-align: center;
@@ -193,6 +213,9 @@ header .fa-arrow-left {
 }
 .restaurants__card--content {
   margin: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .restaurants__card--content h3 {
   font-size: 18px;
@@ -202,33 +225,6 @@ header .fa-arrow-left {
 .restaurants__card--content p {
   font-size: 17px;
   font-weight: 300;
-}
-.restaurants__card--heart i {
-  position: absolute;
-  bottom: 35px;
-  right: 30px;
-  font-size: 25px;
-}
-.restaurants__card .empty__heart {
-  opacity: 1;
-  transition: all 200ms ease-in-out;
-}
-.restaurants__card .empty__heart:hover {
-  opacity: 0;
-  z-index: -1;
-}
-.restaurants__card .full__heart {
-  color: transparent;
-  background: linear-gradient(#FF79DA, #9356DC);
-  background-clip: text;
-  -webkit-background-clip: text;
-  transition: all 200ms ease-in-out;
-  opacity: 0;
-}
-.restaurants__card .full__heart:hover {
-  opacity: 1;
-  transform: scale(1.1);
-  z-index: 1;
 }
 @media screen and (min-device-width: 768px) {
   .restaurants__card {
@@ -279,53 +275,16 @@ header .fa-arrow-left {
 
 .menu__title {
   padding: 35px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 .menu__title h1 {
   font-family: "Shrikhand", Sans-sérif;
   font-size: 28px;
-  margin-right: 60px;
-  position: relative;
-}
-.menu__title--heart i {
-  font-size: 24px;
-  position: absolute;
-  right: 40px;
-  top: 42px;
-}
-@media screen and (min-device-width: 768px) {
-  .menu__title--heart i {
-    right: 180px;
-  }
-}
-@media screen and (min-device-width: 1024px) {
-  .menu__title--heart i {
-    right: 230px;
-  }
-}
-.menu__title .empty__heart {
-  opacity: 1;
-  transition: all 200ms ease-in-out;
-}
-.menu__title .empty__heart:hover {
-  opacity: 0;
-  z-index: -1;
-}
-.menu__title .full__heart {
-  color: transparent;
-  background: linear-gradient(#FF79DA, #9356DC);
-  background-clip: text;
-  -webkit-background-clip: text;
-  transition: all 200ms ease-in-out;
-  opacity: 0;
-}
-.menu__title .full__heart:hover {
-  opacity: 1;
-  transform: scale(1.1);
-  z-index: 1;
 }
 @media screen and (min-device-width: 768px) {
   .menu__title {
-    display: flex;
     justify-content: center;
   }
 }

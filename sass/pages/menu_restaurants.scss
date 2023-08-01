@@ -33,56 +33,16 @@
 
 .menu__title {
     padding: 35px 20px;
-    
+    display: flex;
+    align-items: center;
+    gap: 12px;
 
     h1 {
         font-family: 'Shrikhand', Sans-sérif;
         font-size: 28px;
-        margin-right: 60px;
-        position: relative;
-    }
-
-    &--heart i{
-        font-size: 24px;
-        position: absolute;
-        right: 40px;
-        top: 42px;
-
-        @media screen and (min-device-width : 768px){
-            right: 180px;
-        }
-
-        @media screen and (min-device-width : 1024px){
-            right: 230px;
-        }
-    }
-    .empty__heart{
-        opacity: 1;
-        transition: all 200ms ease-in-out;
-    }
-
-    .empty__heart:hover {
-        opacity: 0;
-        z-index: -1;
-    }
-
-    .full__heart {
-        color: transparent;
-        background: linear-gradient($secondary-color, $main-color);
-        background-clip: text;
-        -webkit-background-clip: text;
-        transition: all 200ms ease-in-out;
-        opacity: 0;
-    }
-    
-    .full__heart:hover {
-        opacity: 1;
-        transform: scale(1.1);
-        z-index: 1;
     }
 
     @media screen and (min-device-width : 768px){
-        display: flex;
         justify-content: center;
     }
 }
