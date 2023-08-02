@@ -246,6 +246,26 @@ button:hover {
   }
 }
 
+.card__animation1 {
+  animation: fadein 0.8s 0.5s ease-out forwards;
+  opacity: 0;
+}
+
+.card__animation2 {
+  animation: fadein 0.8s 1.5s ease-out forwards;
+  opacity: 0;
+}
+
+.card__animation3 {
+  animation: fadein 0.8s 2.5s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes fadein {
+  100% {
+    opacity: 1;
+  }
+}
 .dishes__card .fa-solid {
   color: white;
 }
