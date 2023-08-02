@@ -94,15 +94,4 @@
 .button__center {
     display: flex;
     justify-content: center;
-   
-    button {
-    @include cta-button;
-    @include shadow;
-    transition: all 0.5s ease;
-
-        &:hover {
-            @include shadow-hover;
-            opacity: 0.8;
-        }
-    }
 }
