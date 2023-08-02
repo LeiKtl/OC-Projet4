@@ -37,12 +37,17 @@ header .location {
   justify-content: center;
   align-items: center;
 }
-header .location p, header .location .fa-location-dot {
+header .location input, header .location .fa-location-dot {
   margin: 15px 10px;
 }
-header .location p {
+header .location input {
+  font-size: 16px;
   font-weight: 600;
   letter-spacing: 0.5px;
+  border-style: none;
+  background-color: #EAEAEA;
+  color: #353535;
+  width: 140px;
 }
 header a {
   color: black;
@@ -52,6 +57,21 @@ header .fa-arrow-left {
   top: 25px;
   left: 25px;
   font-size: 22px;
+}
+
+button {
+  padding: 15px 25px;
+  border-radius: 30px;
+  font-size: 16px;
+  color: white;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-style: none;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  transition: all 0.5s ease;
+}
+button:hover {
+  box-shadow: 0px 4px 15px 5px rgba(0, 0, 0, 0.247);
+  opacity: 0.8;
 }
 
 .full__heart, .empty__heart {
@@ -96,18 +116,6 @@ header .fa-arrow-left {
 }
 .presentation button {
   margin-top: 30px;
-  padding: 15px 25px;
-  border-radius: 30px;
-  font-size: 16px;
-  color: white;
-  background: linear-gradient(#FF79DA, #9356DC);
-  border-style: none;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-  transition: all 0.5s ease;
-}
-.presentation button:hover {
-  box-shadow: 0px 4px 15px 5px rgba(0, 0, 0, 0.247);
-  opacity: 0.8;
 }
 
 .functioning, .restaurants {
@@ -364,20 +372,6 @@ header .fa-arrow-left {
 .button__center {
   display: flex;
   justify-content: center;
-}
-.button__center button {
-  padding: 15px 25px;
-  border-radius: 30px;
-  font-size: 16px;
-  color: white;
-  background: linear-gradient(#FF79DA, #9356DC);
-  border-style: none;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-  transition: all 0.5s ease;
-}
-.button__center button:hover {
-  box-shadow: 0px 4px 15px 5px rgba(0, 0, 0, 0.247);
-  opacity: 0.8;
 }
 
 .footer {
