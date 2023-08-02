@@ -1,0 +1,19 @@
+.full__heart, .empty__heart {
+    font-size: 24px;
+}
+
+.full__heart {
+    position: relative;
+    right: 28px;
+    color: transparent;
+    background: linear-gradient($secondary-color, $main-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 0;
+    transition: all 200ms ease;
+}
+
+.full__heart:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
