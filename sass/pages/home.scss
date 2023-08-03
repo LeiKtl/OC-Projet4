@@ -3,11 +3,11 @@
     text-align: center;
     padding: 30px 25px;
 
-    h1 {
+    h2 {
         font-weight: bold;
         padding: 5px 50px;
 
-        @media screen and (min-device-width : 768px) {
+        @media screen and (min-width : 768px) {
             margin-bottom: 20px;
             font-size: 40px;
         }
@@ -27,12 +27,12 @@
 .functioning, .restaurants {
     padding: 50px 20px;
 
-    @media screen and (min-device-width : 768px){
+    @media screen and (min-width : 768px){
         padding-left: 90px;
         padding-right: 90px;
     }
 
-    @media screen and (min-device-width : 1024px){
+    @media screen and (min-width : 1024px){
         padding-left: 180px;
         padding-right: 180px;
     }
@@ -42,7 +42,7 @@
 
     &__cards {
 
-        @media screen and (min-device-width : 768px) {
+        @media screen and (min-width : 768px) {
             display: flex;
         }
     }
@@ -81,12 +81,12 @@
             margin: 10px;
         }
         
-        @media screen and (min-device-width : 768px) {
+        @media screen and (min-width : 768px) {
             width: 30%;
         }
     }
 
-    @media screen and (min-device-width : 768px){
+    @media screen and (min-width : 768px){
         padding-top: 40px;
         padding-bottom: 25px;
     }
@@ -97,7 +97,7 @@
 
     &__cards {
 
-    @media screen and (min-device-width : 768px){
+    @media screen and (min-width : 768px){
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -153,12 +153,12 @@
             }
         }
 
-        @media screen and (min-device-width : 768px) {
+        @media screen and (min-width : 768px) {
             width: 45%;
         }
     }
 
-    @media screen and (min-device-width : 768px){
+    @media screen and (min-width : 768px){
         padding-top: 35px;
         padding-bottom: 5px;
     }

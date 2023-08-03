@@ -23,7 +23,7 @@
     opacity: 0;
     animation: loader-gradient 4s 500ms linear forwards;
 
-    @media screen and (min-device-width : 768px) {
+    @media screen and (min-width : 768px) {
         font-size: 35px;
     }
     
@@ -33,7 +33,7 @@
         font-size: 35px;
         width: 200px;
 
-        @media screen and (min-device-width : 768px) {
+        @media screen and (min-width : 768px) {
             font-size: 45px;
             width: 260px;
         }
