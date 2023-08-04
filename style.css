@@ -8,6 +8,10 @@ h2 {
   font-size: 24px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .loader {
   background-color: #f6f6f6;
   width: 100%;
@@ -259,7 +263,6 @@ button:hover {
   margin: 20px 0;
 }
 .restaurants__card a {
-  text-decoration: none;
   color: black;
 }
 .restaurants__card img {
