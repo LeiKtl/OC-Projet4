@@ -21,7 +21,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: animation-end 0.5s 5.5s linear forwards;
+  animation: animation-end 0.5s 3s linear forwards;
 }
 
 .loader__animation {
@@ -35,7 +35,7 @@ a {
   color: transparent;
   background-repeat: no-repeat;
   opacity: 0;
-  animation: loader-gradient 4s 500ms linear forwards;
+  animation: loader-gradient 2s 0.5s linear forwards;
 }
 @media screen and (min-width: 768px) {
   .loader__animation {
