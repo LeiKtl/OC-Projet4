@@ -134,11 +134,9 @@
             border-radius: 3px;
         }
 
-        &--content {
+        &--txt {
             margin: 10px 15px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            
 
             h3 {
                 font-size: 18px;
@@ -150,6 +148,12 @@
                 font-size: 17px;
                 font-weight: 300;
             }
+        }
+
+        .heart__animation {
+            position: absolute;
+            right: 15px;
+            bottom: 25px;
         }
 
         @media screen and (min-width : 768px) {

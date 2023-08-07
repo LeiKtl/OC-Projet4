@@ -281,20 +281,22 @@ button:hover {
   padding: 6px 15px;
   border-radius: 3px;
 }
-.restaurants__card--content {
+.restaurants__card--txt {
   margin: 10px 15px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
-.restaurants__card--content h3 {
+.restaurants__card--txt h3 {
   font-size: 18px;
   font-weight: 700;
   margin: 5px 0;
 }
-.restaurants__card--content p {
+.restaurants__card--txt p {
   font-size: 17px;
   font-weight: 300;
+}
+.restaurants__card .heart__animation {
+  position: absolute;
+  right: 15px;
+  bottom: 25px;
 }
 @media screen and (min-width: 768px) {
   .restaurants__card {
